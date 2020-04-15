@@ -28,11 +28,7 @@
 
 </script>
 <style>
-  body {
-    margin:0;
-    width:100vw;
-    padding:0;
-  }
+
 
   .layout {
 

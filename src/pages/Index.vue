@@ -1,6 +1,6 @@
 <template>
   <Layout>
-
+<div class="home">
     <component_one />
     <component_two />
     <component_three />
@@ -14,6 +14,7 @@
     <component_eight />
     <component_nine />
     <component_ten />
+</div>
   </Layout>
 </template>
 
@@ -58,9 +59,19 @@
 </script>
 
 <style>
+* {
+  width:99%;
+  margin:0;
+  padding:0;
+}
+  body {
+    margin:0;
+    padding:0;
+
+  }
   .home{
-    width:100vw;
-    background:white;
+    margin:0;
+    padding:0;
 
   }
   #mobile_footer{

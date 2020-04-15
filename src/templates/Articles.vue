@@ -34,6 +34,12 @@
     };
 </script>
 <style>
+
+    body {
+        margin:0;
+        width:100vw;
+        padding:0;
+    }
     .container--article {
         margin-top: -140px;
         background-color: #fff;

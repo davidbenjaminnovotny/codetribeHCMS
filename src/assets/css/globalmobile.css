@@ -1,0 +1,125 @@
+@media only screen and (max-width: 450px) {
+  .background_rectangle {
+    width: 85vw;
+    height: 50vh;
+    position: relative;
+    left: 9%;
+    top: 28%;
+  }
+
+  .slide_content {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+  .slide_content .slide_content_media {
+    width: 100%;
+    position: relative;
+    order: 1;
+    -webkit-filter: drop-shadow(6px 8px 5px rgba(0, 0, 0, 0.05));
+    filter: drop-shadow(6px 8px 5px rgba(0, 0, 0, 0.05));
+  }
+  .slide_content .slide_content_media .slide_content_media_image {
+    width: 90% !important;
+    -webkit-filter: drop-shadow(6px 8px 5px rgba(0, 0, 0, 0.05));
+    filter: drop-shadow(6px 8px 5px rgba(0, 0, 0, 0.05));
+  }
+  .slide_content .slide_content_media:nth-child(odd) {
+    right: -3%;
+    position: relative;
+  }
+  .slide_content .slide_content_media:nth-child(even) {
+    right: 5%;
+    position: relative;
+  }
+  .slide_content .slide_content_text {
+    margin: 0 auto;
+    order: 2;
+    width: 90% !important;
+    margin-top: 2vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    overflow: visible;
+    perspective: 200px;
+  }
+  .slide_content .slide_content_text h1 {
+    font-size: 15vw;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 20;
+    line-height: 7vh;
+  }
+  .slide_content .slide_content_text h1 span {
+    height: 100%;
+  }
+  .slide_content .slide_content_text h3 {
+    font-family: Georgia, "Times New Roman", Times, sans-serif;
+    font-size: 5vw;
+    width: 90%;
+  }
+  .slide_content .slide_content_text h2 {
+    margin-top: 0.5vh;
+    font-size: 5vw;
+    position: relative;
+    left: 0vw;
+  }
+  .slide_content .slide_content_text h5 {
+    font-family: "Georgia", sans-serif;
+    font-size: 2vw;
+    margin: 2vh 0vh 2vh 0vh;
+  }
+  .slide_content .slide_content_text p {
+    font-family: "Raleway", serif;
+    display: none;
+  }
+  .slide_content .slide_content_text button {
+    height: 8vh;
+    width: 70vw;
+    margin: 0 auto;
+  }
+  .slide_content .slide_content_text button a {
+    font-size: 4vw;
+    color: white;
+  }
+  .slide_content .slide_content_navigationBar {
+    width: 50vw;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    z-index: 10;
+    margin-top: 5vh;
+  }
+  .slide_content .slide_content_navigationBar div {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .slide_content .slide_content_navigationBar button {
+    width: 70vw !important;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 2vh;
+  }
+  .slide_content .slide_content_navigationBar button a {
+    text-decoration: none;
+    font-size: 4vw;
+  }
+  .slide_content .slide_content_navigationBar button:hover {
+    transition: 0.2s;
+    transform: scale(1.03);
+  }
+}
+
+/*# sourceMappingURL=globalmobile.css.map */

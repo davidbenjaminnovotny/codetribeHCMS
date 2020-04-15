@@ -108,6 +108,7 @@ import HamMenu from "@/components/navigation/HamMenu"
         width:100%;
         position:fixed;
         background:white;
+        z-index:50;
         transition:.2s;
         overflow:visible !important;
         & nav{
