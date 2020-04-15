@@ -9,6 +9,13 @@
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.5.0",
-    "gridsome": "^0.7.0"
+    "axios": "^0.19.2",
+    "gridsome": "^0.7.0",
+    "gsap": "^3.2.6"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.42.1"
   }
 }

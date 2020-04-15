@@ -1,80 +1,84 @@
 <template>
   <Layout>
-    <div class="container">
-      <h1>List articles</h1>
-      <div v-for="article in $page.articles.edges" :key="article.id" class="article d-flex">
-        <div class="article__img"
-             :style="{ 'background-image': 'url(' + article.node.image + ')' }"></div>
-        <div class="article__body">
-          <g-link :to="article.node.path" class="article__link"></g-link>
-          <h1 class="article__title">{{article.node.title}}</h1>
-          <p class="article__abstract">{{article.node.abstract}}</p>
-        </div>
-      </div>
-    </div>
+
+    <component_one />
+    <component_two />
+    <component_three />
+    <component_four />
+    <component_five />
+
+    <component_option_display />
+    <!-- start a tribe component missing -->
+    <component_six />
+    <!-- component seven missing -->
+    <component_eight />
+    <component_nine />
+    <component_ten />
   </Layout>
 </template>
-<page-query>
-  query {
-  articles: allArticles {
-  edges {
-  node {
-  title
-  abstract
-  image
-  path
-  }
-  }
-  }
-  }
-</page-query>
+
 <script>
+
+  // ~ is an alias to /src
+  import component_one from "~/components/homePageSlides/component_one"
+  import component_two from "~/components/homePageSlides/component_two"
+  import component_three from "~/components/homePageSlides/component_three"
+  import component_four from "~/components/homePageSlides/component_four"
+  import component_five from "~/components/homePageSlides/component_five"
+  import component_six from "~/components/homePageSlides/component_six"
+  import component_seven from "~/components/homePageSlides/component_seven"
+  import component_eight from "~/components/homePageSlides/component_eight"
+  import component_nine from "~/components/homePageSlides/component_nine"
+  import component_ten from "~/components/homePageSlides/component_ten"
+  import start_your_tribe from "~/components/homePageSlides/start_your_tribe"
+  import component_option_display from "~/components/homePageSlides/component_option_display"
   export default {
+    name: 'Home',
     metaInfo: {
-      title: "My blog"
+      title: 'Hello, world!'
+    },
+    components: {
+      component_one,
+      component_two,
+      component_three,
+      component_four,
+      component_option_display,
+      component_five,
+      component_six,
+      component_seven,
+      component_eight,
+      component_nine,
+      component_ten,
+      start_your_tribe,
+    },
+    methods: {
     }
-  };
+  }
+
 </script>
+
 <style>
-  .article {
-    display: flex;
-    align-items: center;
-    box-shadow: 5px 5px 11px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    position: relative;
-    margin-top: 50px;
-    background-color: #fff;
+  .home{
+    width:100vw;
+    background:white;
+
   }
-  @media screen and (max-width: 992px) {
-    .article {
-      display: block;
+  #mobile_footer{
+    display:none;
+  }
+  #desktopFooter{
+    display:flex;
+  }
+
+
+
+  @media only screen and (max-width: 450px) {
+    #mobile_footer{
+      display:flex;
     }
-  }
-  .article__title {
-    margin-top: 0;
-  }
-  .article__body {
-    padding: 15px 30px;
-  }
-  .article__link {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .article__img {
-    width: 250px;
-    height: 140px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    margin-right: 15px;
-  }
-  @media screen and (max-width: 992px) {
-    .article__img {
-      width: 100%;
-      height: 180px;
+    #desktopFooter{
+      display:none !important;
     }
+
   }
 </style>
