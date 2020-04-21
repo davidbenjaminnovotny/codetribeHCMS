@@ -3,7 +3,7 @@ title: Creating the Entrepreneurs and Artists of the Future
 abstract: |-
   Wada, wada,...
   This is how we do it baby.
-image: /uploads/mental-health-young-people.jpg
+image: /uploads/slidefive.jpg
 author: Jonathan Novovtny
 date: 2020-04-21T15:11:13.852Z
 ---
